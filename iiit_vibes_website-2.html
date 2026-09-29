@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IIIT VIBES — Instagram Creator</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#080808;color:#fff;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:20px 7%;background:rgba(8,8,8,.72);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{font-size:20px;font-weight:900;letter-spacing:2px}
+.logo span{color:#ff3b81}
+nav .links{display:flex;gap:28px;font-size:14px;font-weight:700}
+nav .links a:hover{color:#ff3b81}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 20px 70px;position:relative;background:radial-gradient(circle at 50% 35%,#28112a 0,#120a18 32%,#080808 68%)}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(70px);opacity:.35}
+.hero:before{width:260px;height:260px;background:#ff2674;top:18%;left:8%}
+.hero:after{width:300px;height:300px;background:#6c2cff;bottom:8%;right:5%}
+.hero-content{position:relative;z-index:1;max-width:900px}
+.badge{display:inline-block;padding:9px 16px;border:1px solid #ffffff25;border-radius:50px;background:#ffffff0d;font-size:12px;letter-spacing:2px;margin-bottom:24px}
+h1{font-size:clamp(54px,11vw,120px);line-height:.88;letter-spacing:-5px;font-weight:1000}
+.gradient{background:linear-gradient(90deg,#fff,#ff3b81,#a66cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:600px;margin:28px auto;color:#b9b9b9;font-size:18px;line-height:1.6}
+.btn{display:inline-block;background:#fff;color:#090909;padding:14px 24px;border-radius:30px;font-weight:800;margin:8px;transition:.2s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px #ff3b8140}
+.btn.secondary{background:#ffffff10;color:#fff;border:1px solid #ffffff22}
+section{padding:100px 7%}
+.section-title{font-size:42px;letter-spacing:-2px;margin-bottom:12px}
+.sub{color:#8f8f8f;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{height:430px;border-radius:24px;overflow:hidden;position:relative;background:linear-gradient(145deg,#211022,#111);border:1px solid #ffffff12;display:flex;align-items:end;padding:22px;transition:.3s}
+.card:hover{transform:translateY(-7px);border-color:#ff3b8166}
+.card:nth-child(2){background:linear-gradient(145deg,#151b2f,#101010)}
+.card:nth-child(3){background:linear-gradient(145deg,#241d12,#101010)}
+.card:nth-child(4){background:linear-gradient(145deg,#10221e,#101010)}
+.card:nth-child(5){background:linear-gradient(145deg,#21102a,#101010)}
+.card:nth-child(6){background:linear-gradient(145deg,#10202a,#101010)}
+.play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:#fff;color:#000;display:grid;place-items:center;font-size:23px}
+.card-info{position:relative;z-index:1}
+.card-info small{color:#aaa}
+.card-info h3{margin-top:6px;font-size:21px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-box{padding:35px;border:1px solid #ffffff12;border-radius:28px;background:#ffffff06}
+.about p{color:#aaa;line-height:1.8;font-size:17px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:25px}
+.stat{padding:20px;border-radius:18px;background:#ffffff08;text-align:center}
+.stat strong{display:block;font-size:28px}.stat span{color:#888;font-size:12px}
+.contact{text-align:center;background:linear-gradient(180deg,#080808,#120812)}
+footer{text-align:center;padding:30px;color:#666;border-top:1px solid #ffffff0b;font-size:13px}
+@media(max-width:760px){
+nav{padding:17px 5%}.links{gap:15px!important}.links a:nth-child(2){display:none}
+section{padding:75px 5%}.grid{grid-template-columns:1fr 1fr}.card{height:320px;border-radius:18px}.about{grid-template-columns:1fr;gap:25px}
+h1{letter-spacing:-3px}.hero p{font-size:16px}.section-title{font-size:34px}
+}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.card{height:390px}.stats{grid-template-columns:1fr 1fr 1fr}.stat{padding:15px 8px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">IIIT <span>VIBES</span></div>
+  <div class="links"><a href="#home">HOME</a><a href="#videos">VIDEOS</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-content">
+    <div class="badge">🎥 CAMPUS • LIFE • VIBES</div>
+    <h1>IIIT<br><span class="gradient">VIBES</span></h1>
+    <p>Real campus moments, crazy memories, hostel life and everything in between — captured one reel at a time.</p>
+    <a class="btn" href="#videos">WATCH VIDEOS</a>
+    <a class="btn secondary" href="#about">ABOUT CREATOR</a>
+  </div>
+</header>
+
+<section id="videos">
+  <h2 class="section-title">Latest Videos</h2>
+  <p class="sub">Moments from campus, hostel and everyday student life.</p>
+  <div class="grid">
+    <article class="card"><div class="play">▶</div><div class="card-info"><small>REEL 01</small><h3>Hostel Life Hits Different</h3></div></article>
+    <article class="card"><div class="play">▶</div><div class="card-info"><small>REEL 02</small><h3>A Day at IIIT</h3></div></article>
+    <article class="card"><div class="play">▶</div><div class="card-info"><small>REEL 03</small><h3>Friends Before Exams 😂</h3></div></article>
+    <article class="card"><div class="play">▶</div><div class="card-info"><small>REEL 04</small><h3>Campus Vibes</h3></div></article>
+    <article class="card"><div class="play">▶</div><div class="card-info"><small>REEL 05</small><h3>Late Night Memories</h3></div></article>
+    <article class="card"><div class="play">▶</div><div class="card-info"><small>REEL 06</small><h3>Squad Goals</h3></div></article>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about">
+    <div>
+      <h2 class="section-title">More than<br><span class="gradient">just reels.</span></h2>
+      <p class="sub">This is IIIT life through a creator's lens.</p>
+    </div>
+    <div class="about-box">
+      <p>Welcome to <b>IIIT VIBES</b> — a space for campus stories, student life, funny moments, cinematic shots and memories with the squad. Follow along and experience the vibe.</p>
+      <div class="stats">
+        <div class="stat"><strong>🎬</strong><span>REELS</span></div>
+        <div class="stat"><strong>🔥</strong><span>VIBES</span></div>
+        <div class="stat"><strong>❤️</strong><span>MEMORIES</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Stay in the <span class="gradient">VIBE.</span></h2>
+  <p class="sub">Follow IIIT VIBES for the next reel.</p>
+  <a class="btn" href="https://www.instagram.com/" target="_blank">📸 FOLLOW ON INSTAGRAM</a>
+</section>
+
+<footer>© 2026 IIIT VIBES • Made for the campus life.</footer>
+</body>
+</html>
